@@ -1,0 +1,297 @@
+.listeEvent{
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 30px 0;
+    width: 45%;
+    box-shadow: 0px 0px 63px 0px rgba(79, 204, 243, 0.75);
+}
+
+.boutonToggle {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.texteCache {
+    display: none;
+    padding: 20px;
+}
+
+.boutonList, hr{
+    display: none;
+}
+
+hr{
+    size: 1px;
+    color: black;
+}
+
+.boutonList:checked ~ .texteCache {
+    display: block;
+}
+
+.boutonList:checked ~ .dateCache {
+    display: none;
+}
+
+.boutonList:checked ~ hr {
+    display: block;
+}
+
+.paragraphe{
+    margin-top: 10px;
+    font-family: retro;
+    font-size: 12px;
+}
+
+.date{
+    color: #616161;
+}
+
+.dateCache{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+
+.gauche{
+    margin-left: 30px;
+}
+
+.droite{
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.imageEvent{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.newDate{
+    text-align: center;
+    font-size: 15px;
+}
+
+.titreEvent{
+    cursor: pointer;
+}
+
+/*********************************admin*************************************/
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#retour{
+    width: 100%;
+    padding-right: 10px;
+}
+
+#retour{
+    text-align: end;
+}
+
+#formulaire{
+    display: grid;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 100px;
+
+}
+
+#formulaire > form p{
+    margin-top: 20px;
+}
+
+form .texte{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+form #bouton{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+form #bouton:hover{
+    background-color: #dddddd;
+}
+
+.boutonsAdmin{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.boutonsAdmin::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.boutonsAdmin:hover{
+    color: #000000;
+}
+.boutonsAdmin:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+#liens{
+    display: flex;
+}
+
+#boutonDeco{
+    margin-left:10px;
+}
+
+.texteR{
+    font-family: retro;
+    color: red;
+    display: block;
+}
+
+.texteV{
+    font-family: retro;
+    color: green;
+}
+
+#form-event{
+    text-align: center;
+}
+
+#form-event p{
+    margin-top:20px;
+}
+
+#form-event input{
+    width: 400px;
+    height:30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#form-event textarea{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#pParagraphe{
+    display: flex;;
+}
+
+#pParagraphe label{
+    margin-left: auto;
+}
+
+#pParagraphe textarea{
+    margin-right: auto;
+}
+
+#pImage img{
+    margin: 10px auto;
+}
+
+#pImage input{
+    padding: 3px;
+}
+
+#form-event #bouton{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .listeEvent{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+}
+
+.boutonBas{
+    display: flex;
+    margin-top: 10px;
+}
+
+.boutonBas .edit{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.boutonBas .delete{
+    margin-right: 10px;
+}
+
+.edit button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.confirmation-popup button{
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.confirmation-popup .oui{
+    background-color: green;
+}
+
+.confirmation-popup .oui:hover{
+    background-color: #009B00;
+}
+
+.confirmation-popup .non{
+    background-color: red;
+}
+
+.confirmation-popup .non:hover{
+    background-color: #FF4747;
+}
