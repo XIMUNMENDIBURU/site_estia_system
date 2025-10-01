@@ -50,7 +50,7 @@ $spandelay: $prog-bar-dur + $prog-bar-delay;
     padding: 0;
     font-family: zaptron;
     font-size: 62.5%;
-    background-image: url('images/Fond/alveoles2.jpg');
+    background-image: url('../../images/Fond/alveoles2.jpg');
     background-size: contain;
 
     background-attachment:fixed;
@@ -1379,52 +1379,52 @@ button#reload:after {
 .apropos_flip-card-front1 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/président.jpg");
+  background-image: url("../../images/bureaux/président.jpg");
 }
 .apropos_flip-card-front2 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/vicepresident.jpg");
+  background-image: url("../../images/bureaux/vicepresident.jpg");
 }
 .apropos_flip-card-front3 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/respomachine3.png");
+  background-image: url("../../images/bureaux/respomachine3.png");
 }
 .apropos_flip-card-front4 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/tresorier.jpg");
+  background-image: url("../../images/bureaux/tresorier.jpg");
 }
 .apropos_flip-card-front5 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/vicetrésorier4.jpg");
+  background-image: url("../../images/bureaux/vicetrésorier4.jpg");
 }
 .apropos_flip-card-front6 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/respo5S.jpg");
+  background-image: url("../../images/bureaux/respo5S.jpg");
 }
 .apropos_flip-card-front7 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/respoCom.jpg");
+  background-image: url("../../images/bureaux/respoCom.jpg");
 }
 .apropos_flip-card-front8 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/viceRespoCom.jpg");
+  background-image: url("../../images/bureaux/viceRespoCom.jpg");
 }
 .apropos_flip-card-front9 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/support_info.jpg");
+  background-image: url("../../images/bureaux/support_info.jpg");
 }
 .apropos_flip-card-front10 {
   background-size: cover;
   color: white;
-  background-image: url("images/bureaux/viceRespoMachine.jpg");
+  background-image: url("../../images/bureaux/viceRespoMachine.jpg");
 }
   /***************************************************************/
   
@@ -1527,19 +1527,19 @@ button#reload:after {
     
   .apropos_post-image1 {
     @include image_locaux();
-    background-image: url("images/locaux/salle_commune.jpg");
+    background-image: url("../../images/locaux/salle_commune.jpg");
   }
   .apropos_post-image2 {
     @include image_locaux();
-    background-image: url("images/locaux/salle_meca2.jpeg");
+    background-image: url("../../images/locaux/salle_meca2.jpeg");
   }
   .apropos_post-image3 {
     @include image_locaux();
-    background-image: url("images/locaux/salle_meca.jpeg");
+    background-image: url("../../images/locaux/salle_meca.jpeg");
   }
   .apropos_post-image4 {
     @include image_locaux();
-    background-image: url("images/locaux/salle_meca3.jpeg");
+    background-image: url("../../images/locaux/salle_meca3.jpeg");
   }
   
   .apropos_content {
@@ -1762,25 +1762,25 @@ margin-left: 10%;
         }
         
         &.projet_done {
-          background-image: url("images/projet/valide.png");
+          background-image: url("../../images/projet/valide.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
         
         &.projet_working {
-          background-image: url("images/projet/time.png");
+          background-image: url("../../images/projet/time.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
         
         &.projet_novalid {
-          background-image: url("images/projet/annuler.png");
+          background-image: url("../../images/projet/annuler.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
 
         &.projet_point {
-          background-image: url("images/projet/point.png");
+          background-image: url("../../images/projet/point.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
@@ -1824,4 +1824,3 @@ iframe{
 
 
 /*************************************************************/
-  
