@@ -27,6 +27,6 @@ CREATE TABLE users (
 
 -- Insert default admin account
 -- Username: Admin
--- Password: Est1a#System@25!
+-- Password: mdp
 -- Note: The password will be hashed by the PHP application
 INSERT INTO admin (username, password) VALUES ('Admin', '$2y$10$placeholder');

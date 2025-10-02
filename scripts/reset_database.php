@@ -11,7 +11,7 @@ if ($db->resetDatabase()) {
     echo "Database reset successfully!\n";
     echo "Default admin account created:\n";
     echo "Username: Admin\n";
-    echo "Password: Est1a#System@25!\n";
+    echo "Password: mdp\n";
 } else {
     echo "Error resetting database.\n";
 }

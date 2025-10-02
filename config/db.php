@@ -59,8 +59,8 @@ class Database {
             $count = $stmt->fetchColumn();
             
             if ($count == 0) {
-                // Create default admin: Admin / Est1a#System@25!
-                $hashedPassword = password_hash('Est1a#System@25!', PASSWORD_DEFAULT);
+                // Create default admin: Admin / mdp
+                $hashedPassword = password_hash('mdp', PASSWORD_DEFAULT);
                 $stmt = $this->connection->prepare("INSERT INTO admin (username, password) VALUES (?, ?)");
                 $stmt->execute(['Admin', $hashedPassword]);
             }
@@ -99,8 +99,8 @@ class Database {
         $count = $stmt->fetchColumn();
         
         if ($count == 0) {
-            // Create default admin: Admin / Est1a#System@25!
-            $hashedPassword = password_hash('Est1a#System@25!', PASSWORD_DEFAULT);
+            // Create default admin: Admin / mdp
+            $hashedPassword = password_hash('mdp', PASSWORD_DEFAULT);
             $stmt = $this->connection->prepare("INSERT INTO admin (username, password) VALUES (?, ?)");
             $stmt->execute(['Admin', $hashedPassword]);
         }
